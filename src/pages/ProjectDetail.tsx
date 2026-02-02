@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { getProjectBySlug, getAdjacentProjects } from "@/data/projects";
 import ProjectHero from "@/components/ProjectHero";
@@ -12,6 +13,10 @@ const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
   const { prev, next } = slug ? getAdjacentProjects(slug) : { prev: null, next: null };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!project) {
     return <Navigate to="/" replace />;
