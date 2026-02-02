@@ -1,0 +1,39 @@
+interface ProjectInfoProps {
+  client: string;
+  year: string;
+  category: string;
+  services: string[];
+}
+
+const ProjectInfo = ({ client, year, category, services }: ProjectInfoProps) => {
+  const infoItems = [
+    { label: "Client", value: client },
+    { label: "Year", value: year },
+    { label: "Category", value: category },
+    { label: "Services", value: services.join(", ") },
+  ];
+
+  return (
+    <section className="border-b border-foreground">
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        {infoItems.map((item, index) => (
+          <div 
+            key={item.label}
+            className={`p-6 md:p-8 ${
+              index < infoItems.length - 1 ? "border-r border-foreground" : ""
+            } ${index < 2 ? "border-b md:border-b-0 border-foreground" : ""}`}
+          >
+            <p className="text-xs text-primary font-medium tracking-wider mb-2">
+              {item.label.toUpperCase()}
+            </p>
+            <p className="text-sm md:text-base font-medium">
+              {item.value}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectInfo;

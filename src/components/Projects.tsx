@@ -1,19 +1,6 @@
-import projectDesign from "@/assets/project-design.jpg";
-import projectSocial from "@/assets/project-social.jpg";
-import projectEmail from "@/assets/project-email.jpg";
-import projectVideo from "@/assets/project-video.jpg";
+import { Link } from "react-router-dom";
+import { projects } from "@/data/projects";
 import heroImage from "@/assets/hero-lightbulb.jpg";
-
-const categories = ["WEB", "Social Media", "Design", "Email", "Video"];
-
-const projects = [
-  { title: "Brand Identity", category: "Design", image: projectDesign, link: "#" },
-  { title: "Instagram Campaign", category: "Social Media", image: projectSocial, link: "#" },
-  { title: "Newsletter Design", category: "Email", image: projectEmail, link: "#" },
-  { title: "Motion Graphics", category: "Video", image: projectVideo, link: "#" },
-  { title: "UI/UX Design", category: "Design", image: projectDesign, link: "#" },
-  { title: "TikTok Strategy", category: "Social Media", image: projectSocial, link: "#" },
-];
 
 const Projects = () => {
   return (
@@ -52,21 +39,21 @@ const Projects = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <article 
-            key={index}
+            key={project.slug}
             className={`border-b md:border-b-0 ${
               index % 3 !== 2 ? 'lg:border-r' : ''
             } ${index % 2 !== 1 ? 'md:border-r lg:border-r-0' : 'md:border-r-0'} ${
               index < 3 ? 'lg:border-b' : ''
             } ${index < 2 ? 'md:border-b' : 'md:border-b-0'} border-foreground group`}
           >
-            <a href={project.link} className="block">
+            <Link to={`/project/${project.slug}`} className="block">
               <div className="p-4">
                 <h4 className="text-sm font-medium mb-1">{project.title}</h4>
                 <p className="text-xs text-muted-foreground">{project.category}</p>
               </div>
               <div className="relative aspect-[4/3] bg-secondary overflow-hidden">
                 <img 
-                  src={project.image}
+                  src={project.heroImage}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -79,7 +66,7 @@ const Projects = () => {
                   to {project.title.toLowerCase()}
                 </span>
               </div>
-            </a>
+            </Link>
           </article>
         ))}
       </div>
