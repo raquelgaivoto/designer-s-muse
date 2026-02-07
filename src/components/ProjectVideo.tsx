@@ -6,16 +6,9 @@ interface ProjectVideoProps {
 }
 
 const ProjectVideo = ({ video, title }: ProjectVideoProps) => {
-  // Show video player if video exists, otherwise show placeholder
   return (
-    <section className="border-b border-foreground">
-      <div className="p-8 md:p-12 lg:p-16 border-b border-foreground text-center">
-        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl">
-          VIDEO
-        </h2>
-      </div>
-
-      <div className="p-8 md:p-12 lg:p-16">
+    <section className="border-b border-foreground bg-background">
+      <div className="px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20">
         <div className="max-w-5xl mx-auto">
           {video ? (
             <div className="relative aspect-video bg-secondary overflow-hidden">
@@ -34,10 +27,9 @@ const ProjectVideo = ({ video, title }: ProjectVideoProps) => {
             <div className="relative aspect-video bg-primary flex items-center justify-center">
               <div className="text-center text-primary-foreground">
                 <Play className="w-16 h-16 mx-auto mb-4 opacity-60" />
-                <p className="font-display text-2xl md:text-3xl tracking-wider opacity-80">
+                <p className="font-display text-4xl md:text-5xl lg:text-6xl tracking-wider">
                   VIDEO
                 </p>
-                <p className="text-sm opacity-60 mt-2">Coming soon</p>
               </div>
             </div>
           )}

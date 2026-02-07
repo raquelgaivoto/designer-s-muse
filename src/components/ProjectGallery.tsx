@@ -5,54 +5,49 @@ interface ProjectGalleryProps {
 }
 
 const ProjectGallery = ({ images, title, subtitle }: ProjectGalleryProps) => {
-  // Create a masonry-like layout pattern based on image count
-  const getImageLayout = (index: number, total: number) => {
-    // Pattern: large + small, then pairs, then varied
-    const pattern = index % 5;
-    switch (pattern) {
-      case 0:
-        return "md:col-span-2 aspect-[16/10]"; // Large landscape
-      case 1:
-        return "aspect-[3/4]"; // Portrait
-      case 2:
-        return "aspect-[4/3]"; // Landscape
-      case 3:
-        return "aspect-[3/4]"; // Portrait
-      case 4:
-        return "md:col-span-2 aspect-[21/9]"; // Wide panoramic
-      default:
-        return "aspect-[4/3]";
-    }
+  // Assign layout classes based on position to create an organic, magazine-style collage
+  const getLayoutClasses = (index: number) => {
+    const layouts = [
+      "col-span-2 row-span-2",   // Large feature image
+      "col-span-1 row-span-1",   // Small square
+      "col-span-1 row-span-2",   // Tall portrait
+      "col-span-1 row-span-1",   // Small square
+      "col-span-2 row-span-1",   // Wide landscape
+      "col-span-1 row-span-1",   // Small square
+      "col-span-1 row-span-1",   // Small square
+      "col-span-3 row-span-1",   // Full-width panoramic
+    ];
+    return layouts[index % layouts.length];
   };
 
   return (
-    <section className="border-b border-foreground">
-      <div className="p-8 md:p-12 lg:p-16 border-b border-foreground text-center">
-        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl">
+    <section className="border-b border-foreground bg-background">
+      <div className="py-12 md:py-16 lg:py-20 text-center">
+        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-tight">
           PROJECT GALLERY
         </h2>
         {subtitle && (
-          <p className="text-sm text-muted-foreground mt-2 tracking-wider">
+          <p className="text-sm text-muted-foreground mt-3 tracking-widest uppercase">
             {subtitle}
           </p>
         )}
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-        {images.map((image, index) => (
-          <div 
-            key={index}
-            className={`relative overflow-hidden group ${getImageLayout(index, images.length)} border-b border-foreground last:border-b-0 ${
-              index < images.length - 1 ? "md:border-r border-foreground" : ""
-            }`}
-          >
-            <img 
-              src={image} 
-              alt={`${title} - Gallery ${index + 1}`}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-        ))}
+
+      <div className="px-6 md:px-12 lg:px-16 pb-12 md:pb-16 lg:pb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[250px] lg:auto-rows-[280px]">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`relative overflow-hidden group rounded-sm ${getLayoutClasses(index)}`}
+            >
+              <img
+                src={image}
+                alt={`${title} - Gallery ${index + 1}`}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
