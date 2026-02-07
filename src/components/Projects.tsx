@@ -1,8 +1,24 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
-import heroImage from "@/assets/hero-lightbulb.jpg";
+
+const featuredImages = [
+  projects[0].heroImage,
+  projects[1].heroImage,
+  projects[2].heroImage,
+  projects[3].heroImage,
+];
 
 const Projects = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % featuredImages.length);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="projects" className="border-b border-foreground">
       {/* Section Header */}
@@ -27,11 +43,31 @@ const Projects = () => {
           </a>
         </div>
         <div className="relative aspect-video lg:aspect-auto border-t lg:border-t-0 lg:border-l border-foreground overflow-hidden">
-          <img 
-            src={heroImage} 
-            alt="Featured project showcase"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          {featuredImages.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Featured project ${i + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                i === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
+          {/* Slide indicators */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            {featuredImages.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentSlide(i)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  i === currentSlide
+                    ? "bg-primary-foreground w-6"
+                    : "bg-primary-foreground/40"
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
