@@ -66,7 +66,7 @@ const Hero = () => {
           aboutOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 border-b-0"
         }`}
       >
-        <div className="px-8 md:px-12 lg:px-16 py-10 md:py-14 max-w-2xl mx-auto text-center flex flex-col gap-6">
+        <div className="px-8 md:px-12 lg:px-16 py-10 md:py-14 text-center flex flex-col gap-6">
           <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
             I'm a creative designer passionate about shapes, colors, and patterns. Design is more than a profession to me — it's a way of seeing the world and transforming ideas into meaningful, functional, and visually engaging experiences.
           </p>
