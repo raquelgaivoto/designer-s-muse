@@ -12,13 +12,13 @@ const ProjectInfo = ({ client, year, services }: ProjectInfoProps) => {
   ];
 
   return (
-    <section className="border-b border-foreground">
+    <section className="border-b border-foreground/15">
       <div className="grid grid-cols-3">
         {infoItems.map((item, index) => (
           <div 
             key={item.label}
             className={`p-6 md:p-8 ${
-              index < infoItems.length - 1 ? "border-r border-foreground" : ""
+              index < infoItems.length - 1 ? "border-r border-foreground/15" : ""
             }`}
           >
             <p className="text-xs text-primary font-medium tracking-wider mb-2">

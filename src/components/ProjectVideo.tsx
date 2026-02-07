@@ -7,9 +7,9 @@ interface ProjectVideoProps {
 
 const ProjectVideo = ({ video, title }: ProjectVideoProps) => {
   return (
-    <section className="border-b border-foreground bg-background">
-      <div className="px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20">
-        <div className="max-w-5xl mx-auto">
+    <section className="bg-background">
+      <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24">
+        <div className="mx-auto">
           {video ? (
             <div className="relative aspect-video bg-secondary overflow-hidden">
               <video
