@@ -27,9 +27,6 @@ const Contact = () => {
             <p className="text-primary-foreground/80 max-w-md mb-2">
               Ready to bring your ideas to life? Get in touch and let's create something amazing.
             </p>
-            <p className="text-primary-foreground/60 text-sm">
-              raqmonteirog@gmail.com
-            </p>
           </div>
 
           {/* Right - CTA with dropdown */}
