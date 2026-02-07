@@ -84,6 +84,16 @@ const Projects = () => {
                 <h4 className="text-sm font-medium mb-1">{project.title}</h4>
                 <p className="text-xs text-muted-foreground">{project.category}</p>
               </div>
+              <div className="relative aspect-[4/3] bg-secondary overflow-hidden">
+                <img 
+                  src={project.heroImage}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span className="category-tag absolute bottom-4 left-4">
+                  {project.category}
+                </span>
+              </div>
             </Link>
           </article>
         ))}
