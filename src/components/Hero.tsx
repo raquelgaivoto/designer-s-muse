@@ -21,7 +21,7 @@ const Hero = () => {
           {navItems.map((item, index) => (
             <li key={item} className="flex items-center gap-4">
               <a 
-                href={`#${item.toLowerCase().replace(' ', '-')}`} 
+                href="#projects" 
                 className="link-underline text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item}
