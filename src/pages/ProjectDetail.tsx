@@ -4,6 +4,7 @@ import { getProjectBySlug, getAdjacentProjects } from "@/data/projects";
 import ProjectHero from "@/components/ProjectHero";
 import ProjectInfo from "@/components/ProjectInfo";
 import ProjectContent from "@/components/ProjectContent";
+import ProjectVideo from "@/components/ProjectVideo";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectMetrics from "@/components/ProjectMetrics";
 import ProjectNav from "@/components/ProjectNav";
@@ -38,6 +39,10 @@ const ProjectDetail = () => {
       <ProjectContent 
         challenge={project.challenge} 
         solution={project.solution} 
+      />
+      <ProjectVideo 
+        video={project.video} 
+        title={project.title} 
       />
       <ProjectGallery 
         images={project.gallery} 

@@ -21,6 +21,7 @@ export interface Project {
   solution: string;
   gallery: string[];
   metrics: ProjectMetric[];
+  video?: string;
 }
 
 export const projects: Project[] = [
@@ -115,6 +116,7 @@ export const projects: Project[] = [
       { value: "4K", label: "Resolution" },
       { value: "100%", label: "Brand Aligned" },
     ],
+    video: "/videos/titulo-motion.mp4",
   },
   {
     slug: "brevemente-teaser",
@@ -132,6 +134,7 @@ export const projects: Project[] = [
       { value: "High", label: "Anticipation" },
       { value: "Social", label: "Optimized" },
     ],
+    video: "/videos/brevemente-motion.mp4",
   },
 ];
 
