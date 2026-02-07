@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import heroBg from "@/assets/hero-gradient-bg.jpg";
 const navItems = ["Design", "Social Media", "Video", "Email"];
 
 const Hero = () => {
@@ -35,14 +35,20 @@ const Hero = () => {
       </nav>
 
       {/* Hero Content */}
-      <div className="border-b border-foreground">
-        <div className="flex flex-col justify-center items-center text-center p-12 md:p-16 lg:p-24 animate-fade-in">
-          <p className="text-lg md:text-xl lg:text-2xl font-light mb-8 max-w-md">
+      <div className="relative border-b border-foreground overflow-hidden">
+        <img 
+          src={heroBg} 
+          alt="" 
+          className="absolute inset-0 w-full h-full object-cover" 
+          aria-hidden="true"
+        />
+        <div className="relative flex flex-col justify-center items-center text-center p-12 md:p-16 lg:p-24 animate-fade-in">
+          <p className="text-lg md:text-xl lg:text-2xl font-light mb-8 max-w-md text-white drop-shadow-md">
             WHERE EVERY PIXEL TELLS A STORY.
           </p>
           <button 
             onClick={() => setAboutOpen(!aboutOpen)} 
-            className="btn-hero w-fit"
+            className="btn-hero w-fit bg-white/90 text-foreground hover:bg-white"
           >
             GET TO KNOW ME
           </button>
