@@ -35,12 +35,9 @@ const Projects = () => {
       <div className="grid lg:grid-cols-2 border-b border-foreground">
         <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
           <span className="text-xs text-muted-foreground tracking-wider mb-4">FEATURED</span>
-          <h3 className="font-display text-3xl md:text-4xl lg:text-5xl mb-6">
+          <h3 className="font-display text-3xl md:text-4xl lg:text-5xl">
             MULTIPLE PROJECTS
           </h3>
-          <a href="#" className="btn-hero w-fit">
-            SEE MORE
-          </a>
         </div>
         <div className="relative aspect-video lg:aspect-auto border-t lg:border-t-0 lg:border-l border-foreground overflow-hidden">
           {featuredImages.map((img, i) => (
