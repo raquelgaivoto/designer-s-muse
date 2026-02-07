@@ -1,5 +1,4 @@
 import { useState } from "react";
-import heroImage from "@/assets/hero-lightbulb.jpg";
 
 const navItems = ["Design", "Social Media", "Video", "Email"];
 
@@ -7,7 +6,7 @@ const Hero = () => {
   const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
-    <section className="min-h-screen">
+    <section>
       {/* Large Title */}
       <header className="border-b border-foreground">
         <h1 className="font-display text-[12vw] md:text-[10vw] lg:text-[8vw] leading-none tracking-tight px-6 py-4">
@@ -36,9 +35,8 @@ const Hero = () => {
       </nav>
 
       {/* Hero Content */}
-      <div className="grid lg:grid-cols-2 border-b border-foreground">
-        {/* Left - Text */}
-        <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16 animate-fade-in">
+      <div className="border-b border-foreground">
+        <div className="flex flex-col justify-center items-center text-center p-12 md:p-16 lg:p-24 animate-fade-in">
           <p className="text-lg md:text-xl lg:text-2xl font-light mb-8 max-w-md">
             WHERE EVERY PIXEL TELLS A STORY.
           </p>
@@ -48,15 +46,6 @@ const Hero = () => {
           >
             GET TO KNOW ME
           </button>
-        </div>
-
-        {/* Right - Image */}
-        <div className="relative aspect-square lg:aspect-auto border-t lg:border-t-0 lg:border-l border-foreground overflow-hidden">
-          <img 
-            src={heroImage} 
-            alt="Creative colorful lightbulb representing design innovation"
-            className="w-full h-full object-cover animate-fade-in stagger-2"
-          />
         </div>
       </div>
 
