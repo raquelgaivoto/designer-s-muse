@@ -3,11 +3,12 @@ import { ArrowLeft } from "lucide-react";
 
 interface ProjectHeroProps {
   title: string;
+  subtitle?: string;
   category: string;
   heroImage: string;
 }
 
-const ProjectHero = ({ title, category, heroImage }: ProjectHeroProps) => {
+const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps) => {
   return (
     <section className="relative min-h-screen">
       {/* Header */}
@@ -40,6 +41,11 @@ const ProjectHero = ({ title, category, heroImage }: ProjectHeroProps) => {
         <span className="category-tag mb-4 inline-block">
           {category}
         </span>
+        {subtitle && (
+          <p className="text-sm md:text-base tracking-widest text-muted-foreground mb-2 font-medium">
+            {subtitle}
+          </p>
+        )}
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight animate-fade-in">
           {title.toUpperCase()}
         </h1>
