@@ -4,8 +4,8 @@ import { getProjectBySlug, getAdjacentProjects } from "@/data/projects";
 import ProjectHero from "@/components/ProjectHero";
 import ProjectInfo from "@/components/ProjectInfo";
 import ProjectContent from "@/components/ProjectContent";
-import ProjectVideo from "@/components/ProjectVideo";
 import ProjectGallery from "@/components/ProjectGallery";
+import ProjectVideo from "@/components/ProjectVideo";
 import ProjectMetrics from "@/components/ProjectMetrics";
 import ProjectNav from "@/components/ProjectNav";
 import Contact from "@/components/Contact";
@@ -27,25 +27,26 @@ const ProjectDetail = () => {
     <main className="min-h-screen bg-background text-foreground">
       <ProjectHero 
         title={project.title} 
+        subtitle={project.subtitle}
         category={project.category} 
         heroImage={project.heroImage} 
       />
       <ProjectInfo 
         client={project.client} 
         year={project.year} 
-        category={project.category} 
         services={project.services} 
       />
       <ProjectContent 
         challenge={project.challenge} 
         solution={project.solution} 
       />
-      <ProjectVideo 
-        video={project.video} 
-        title={project.title} 
-      />
       <ProjectGallery 
         images={project.gallery} 
+        title={project.title}
+        subtitle={project.gallerySubtitle} 
+      />
+      <ProjectVideo 
+        video={project.video} 
         title={project.title} 
       />
       <ProjectMetrics metrics={project.metrics} />
