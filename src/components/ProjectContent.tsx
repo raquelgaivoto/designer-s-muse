@@ -5,10 +5,10 @@ interface ProjectContentProps {
 
 const ProjectContent = ({ challenge, solution }: ProjectContentProps) => {
   return (
-    <section className="border-b border-foreground">
+    <section className="border-b border-foreground/15">
       <div className="grid md:grid-cols-2">
         {/* Challenge */}
-        <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 md:border-r border-foreground">
+        <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 md:border-r border-foreground/15">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl mb-6 text-primary italic underline underline-offset-4 decoration-2">
             THE CHALLENGE
           </h2>

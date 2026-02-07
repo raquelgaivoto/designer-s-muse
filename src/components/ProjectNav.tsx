@@ -9,7 +9,7 @@ interface ProjectNavProps {
 
 const ProjectNav = ({ prevProject, nextProject }: ProjectNavProps) => {
   return (
-    <section className="border-b border-foreground">
+    <section>
       <div className="grid md:grid-cols-2">
         {/* Previous Project */}
         {prevProject ? (

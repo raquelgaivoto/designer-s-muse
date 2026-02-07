@@ -12,7 +12,7 @@ const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps)
   return (
     <section className="relative min-h-screen">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4 border-b border-foreground/20">
+      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4">
         <Link to="/" className="font-display text-2xl md:text-3xl tracking-tight">
           PORTFOLIO<span className="text-muted-foreground">_</span>RG
         </Link>
