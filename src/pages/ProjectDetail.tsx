@@ -6,7 +6,6 @@ import ProjectInfo from "@/components/ProjectInfo";
 import ProjectContent from "@/components/ProjectContent";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectVideo from "@/components/ProjectVideo";
-import ProjectMetrics from "@/components/ProjectMetrics";
 import ProjectNav from "@/components/ProjectNav";
 import Contact from "@/components/Contact";
 
@@ -49,7 +48,6 @@ const ProjectDetail = () => {
         video={project.video} 
         title={project.title} 
       />
-      <ProjectMetrics metrics={project.metrics} />
       <ProjectNav prevProject={prev} nextProject={next} />
       <Contact />
     </main>

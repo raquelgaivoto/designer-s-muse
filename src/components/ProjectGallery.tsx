@@ -5,6 +5,26 @@ interface ProjectGalleryProps {
 }
 
 const ProjectGallery = ({ images, title, subtitle }: ProjectGalleryProps) => {
+  // Create a masonry-like layout pattern based on image count
+  const getImageLayout = (index: number, total: number) => {
+    // Pattern: large + small, then pairs, then varied
+    const pattern = index % 5;
+    switch (pattern) {
+      case 0:
+        return "md:col-span-2 aspect-[16/10]"; // Large landscape
+      case 1:
+        return "aspect-[3/4]"; // Portrait
+      case 2:
+        return "aspect-[4/3]"; // Landscape
+      case 3:
+        return "aspect-[3/4]"; // Portrait
+      case 4:
+        return "md:col-span-2 aspect-[21/9]"; // Wide panoramic
+      default:
+        return "aspect-[4/3]";
+    }
+  };
+
   return (
     <section className="border-b border-foreground">
       <div className="p-8 md:p-12 lg:p-16 border-b border-foreground text-center">
@@ -18,15 +38,13 @@ const ProjectGallery = ({ images, title, subtitle }: ProjectGalleryProps) => {
         )}
       </div>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
         {images.map((image, index) => (
           <div 
             key={index}
-            className={`relative aspect-square overflow-hidden group ${
-              index === 0 ? "md:col-span-2 lg:col-span-2" : ""
-            } border-b md:border-b-0 ${
-              index < images.length - 1 ? "md:border-r" : ""
-            } border-foreground`}
+            className={`relative overflow-hidden group ${getImageLayout(index, images.length)} border-b border-foreground last:border-b-0 ${
+              index < images.length - 1 ? "md:border-r border-foreground" : ""
+            }`}
           >
             <img 
               src={image} 
