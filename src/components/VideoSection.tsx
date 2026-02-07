@@ -1,6 +1,7 @@
 const videos = [
   { id: 1, title: "Manifest", src: "/videos/manifesto.mp4" },
   { id: 2, title: "New Identity", src: "/videos/new-identity.mp4" },
+  { id: 3, title: "Agilidade Brand", src: "/videos/agilidade-brand.mp4" },
 ];
 
 const VideoSection = () => {
@@ -18,7 +19,7 @@ const VideoSection = () => {
         </div>
 
         {/* Video Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {videos.map((video) => (
             <article key={video.id}>
               <div className="relative aspect-video bg-secondary overflow-hidden mb-4">
