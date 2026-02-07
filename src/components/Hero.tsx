@@ -62,13 +62,13 @@ const Hero = () => {
         }`}
       >
         <div className="px-8 md:px-12 lg:px-16 py-10 md:py-14 text-center flex flex-col gap-6">
-          <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
+          <p className="text-sm md:text-base leading-relaxed text-foreground">
             I'm a creative designer passionate about shapes, colors, and patterns. Design is more than a profession to me — it's a way of seeing the world and transforming ideas into meaningful, functional, and visually engaging experiences.
           </p>
-          <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
+          <p className="text-sm md:text-base leading-relaxed text-foreground">
             With a background in Visual Arts and Technologies and further specialization in Branding and Content Marketing, I combine creativity with strategic thinking. My experience spans graphic design, social media management, email marketing, website content creation, and both digital and print production across industries such as tourism, digital marketing, and health.
           </p>
-          <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
+          <p className="text-sm md:text-base leading-relaxed text-foreground">
             I approach every project as an opportunity to learn, experiment, and refine my craft. I'm driven by curiosity, continuous growth, and the challenge of turning concepts into compelling visual solutions that communicate clearly and effectively.
           </p>
         </div>
