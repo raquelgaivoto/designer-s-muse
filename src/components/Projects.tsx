@@ -94,6 +94,11 @@ const Projects = () => {
                   {project.category}
                 </span>
               </div>
+              <div className="p-4 border-t border-foreground">
+                <span className="link-underline text-xs font-medium">
+                  to {project.title.toLowerCase()}
+                </span>
+              </div>
             </Link>
           </article>
         ))}
