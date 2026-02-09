@@ -1,4 +1,9 @@
 import brightnightEmail from "@/assets/brightnight-email.jpg";
+import techCompany1 from "@/assets/tech-company-1.jpg";
+import techCompany2 from "@/assets/tech-company-2.jpg";
+import techCompany3 from "@/assets/tech-company-3.jpg";
+import techCompany4 from "@/assets/tech-company-4.png";
+import techCompany5 from "@/assets/tech-company-5.jpg";
 import blackdaysSocial from "@/assets/blackdays-social.jpg";
 import premiosCaboverde from "@/assets/premios-caboverde.jpg";
 import scotturb1 from "@/assets/scotturb-1.jpg";
@@ -192,24 +197,24 @@ export const projects: Project[] = [
     ],
   },
 
-  // EMAIL CATEGORY
+  // TECNOLOGIC COMPANY CATEGORY
   {
-    slug: "bright-night-email",
-    title: "Bright Night Campaign",
-    subtitle: "EMAIL MARKETING",
-    category: "Email",
-    heroImage: brightnightEmail,
-    client: "Consolidador.com",
-    year: "2024",
-    services: ["Email Design", "Campaign Graphics", "Event Promotion"],
-    challenge: "Consolidador.com needed eye-catching email marketing materials to promote their exclusive Bright Night events in Lisboa and Avintes during December.",
-    solution: "We created a festive, elegant email banner design featuring golden accents and a Christmas tree motif with airplane elements, perfectly blending holiday spirit with travel industry identity.",
-    gallery: [brightnightEmail, heroImage, brightnightEmail],
-    gallerySubtitle: "Email Campaign Materials",
+    slug: "tecnologic-company",
+    title: "Tecnologic Company",
+    subtitle: "PRODUCT VISUALS & CAMPAIGNS",
+    category: "Design",
+    heroImage: techCompany1,
+    client: "Samsung",
+    year: "2022",
+    services: ["Product Photography", "Campaign Design", "Visual Content"],
+    challenge: "A leading technology company needed compelling product visuals and campaign materials to showcase their diverse product lineup across smartphones and home appliances.",
+    solution: "We produced clean, high-impact product imagery and promotional materials that highlight each product's unique features while maintaining brand consistency across the entire range.",
+    gallery: [techCompany1, techCompany2, techCompany3, techCompany4, techCompany5],
+    gallerySubtitle: "Product Campaigns",
     metrics: [
-      { value: "2", label: "Event Locations" },
-      { value: "Dec 12 & 17", label: "Event Dates" },
-      { value: "High", label: "Engagement Rate" },
+      { value: "5+", label: "Product Lines" },
+      { value: "Multi", label: "Formats" },
+      { value: "High", label: "Impact" },
     ],
   },
 
