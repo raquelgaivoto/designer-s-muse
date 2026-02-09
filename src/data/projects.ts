@@ -6,6 +6,10 @@ import techCompany4 from "@/assets/tech-company-4.png";
 import techCompany5 from "@/assets/tech-company-5.jpg";
 import blackdaysSocial from "@/assets/blackdays-social.jpg";
 import premiosCaboverde from "@/assets/premios-caboverde.jpg";
+import agilcare1 from "@/assets/agilcare-1.png";
+import agilcare2 from "@/assets/agilcare-2.png";
+import agilcare3 from "@/assets/agilcare-3.png";
+import agilcare4 from "@/assets/agilcare-4.png";
 import scotturb1 from "@/assets/scotturb-1.jpg";
 import scotturb2 from "@/assets/scotturb-2.jpg";
 import scotturb3 from "@/assets/scotturb-3.jpg";
@@ -220,23 +224,24 @@ export const projects: Project[] = [
 
   // SOCIAL MEDIA CATEGORY
   {
-    slug: "black-days-campaign",
-    title: "Black Days Campaign",
-    subtitle: "SOCIAL MEDIA",
-    category: "Social Media",
-    heroImage: blackdaysSocial,
-    client: "Airmet",
+    slug: "rebranding-agilcare",
+    title: "Rebranding Agilcare",
+    subtitle: "BRAND IDENTITY & REBRANDING",
+    category: "Design",
+    heroImage: agilcare2,
+    client: "Agilcare",
     year: "2024",
-    services: ["Social Media Design", "Campaign Strategy", "Visual Content"],
-    challenge: "Airmet needed a vibrant, attention-grabbing social media campaign for their Black Days promotion that would stand out in crowded feeds and inspire travel bookings.",
-    solution: "We designed a dynamic visual campaign featuring travel landmarks, energetic composition, and bold typography that captures the excitement of travel deals and inspires wanderlust.",
-    gallery: [blackdaysSocial, heroImage, blackdaysSocial],
-    gallerySubtitle: "Social Media Assets",
+    services: ["Brand Identity", "Rebranding", "Visual Communication"],
+    challenge: "Agilcare needed a complete brand refresh to modernize their visual identity and better communicate their health care values across all touchpoints.",
+    solution: "We developed a clean, modern rebrand with a refreshed logo, vibrant blue palette, and cohesive visual system applied across digital, print, and video communications.",
+    gallery: [agilcare1, agilcare2, agilcare3, agilcare4],
+    gallerySubtitle: "Rebranding Materials",
     metrics: [
-      { value: "50K+", label: "Impressions" },
-      { value: "8.2%", label: "Engagement Rate" },
-      { value: "35%", label: "Booking Increase" },
+      { value: "New", label: "Brand Identity" },
+      { value: "Multi", label: "Touchpoints" },
+      { value: "High", label: "Brand Recognition" },
     ],
+    video: "/videos/agilcare-rebrand.mp4",
   },
 
   // VIDEO CATEGORY
