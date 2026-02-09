@@ -1,6 +1,10 @@
 import brightnightEmail from "@/assets/brightnight-email.jpg";
 import blackdaysSocial from "@/assets/blackdays-social.jpg";
 import premiosCaboverde from "@/assets/premios-caboverde.jpg";
+import scotturb1 from "@/assets/scotturb-1.jpg";
+import scotturb2 from "@/assets/scotturb-2.jpg";
+import scotturb3 from "@/assets/scotturb-3.jpg";
+import scotturb4 from "@/assets/scotturb-4.jpg";
 import airmetStand from "@/assets/airmet-stand-btl.jpg";
 import heroImage from "@/assets/hero-lightbulb.jpg";
 
@@ -145,22 +149,22 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "premios-caboverde",
-    title: "Prémios Cabo Verde",
-    subtitle: "AWARD CEREMONY",
-    category: "Design",
-    heroImage: premiosCaboverde,
-    client: "Consolidador.com",
-    year: "2024",
-    services: ["Award Design", "Visual Identity", "Print Materials"],
-    challenge: "Consolidador.com needed a prestigious visual identity for their annual awards ceremony celebrating the top travel agency sellers for Cabo Verde destinations.",
-    solution: "We designed an elegant award presentation system with a cohesive visual language that celebrates achievement while maintaining brand consistency across all touchpoints.",
-    gallery: [premiosCaboverde, heroImage, premiosCaboverde],
-    gallerySubtitle: "Award Ceremony Materials",
+    slug: "scotturb-social-media",
+    title: "Scotturb Social Media",
+    subtitle: "SOCIAL MEDIA CAMPAIGNS",
+    category: "Social Media",
+    heroImage: scotturb1,
+    client: "Scotturb",
+    year: "2022",
+    services: ["Social Media Design", "Campaign Strategy", "Visual Content"],
+    challenge: "Scotturb needed engaging social media campaigns to promote their sightseeing and Royal Express travel services across multiple routes in Portugal.",
+    solution: "We created vibrant, eye-catching social media visuals that highlight destinations, pricing, and brand identity, driving online engagement and ticket sales.",
+    gallery: [scotturb1, scotturb2, scotturb3, scotturb4],
+    gallerySubtitle: "Social Media Campaigns",
     metrics: [
-      { value: "3", label: "Award Categories" },
-      { value: "100+", label: "Attendees" },
-      { value: "Top 3", label: "Sellers Recognized" },
+      { value: "4+", label: "Campaigns" },
+      { value: "Multi", label: "Routes" },
+      { value: "High", label: "Engagement" },
     ],
   },
   {
