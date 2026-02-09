@@ -10,6 +10,9 @@ import agilcare1 from "@/assets/agilcare-1.png";
 import agilcare2 from "@/assets/agilcare-2.png";
 import agilcare3 from "@/assets/agilcare-3.png";
 import agilcare4 from "@/assets/agilcare-4.png";
+import agilcare5 from "@/assets/agilcare-5.png";
+import agilcare6 from "@/assets/agilcare-6.png";
+import agilcare7 from "@/assets/agilcare-7.png";
 import scotturb1 from "@/assets/scotturb-1.jpg";
 import scotturb2 from "@/assets/scotturb-2.jpg";
 import scotturb3 from "@/assets/scotturb-3.jpg";
@@ -234,7 +237,7 @@ export const projects: Project[] = [
     services: ["Brand Identity", "Rebranding", "Visual Communication"],
     challenge: "Agilcare needed a complete brand refresh to modernize their visual identity and better communicate their health care values across all touchpoints.",
     solution: "We developed a clean, modern rebrand with a refreshed logo, vibrant blue palette, and cohesive visual system applied across digital, print, and video communications.",
-    gallery: [agilcare1, agilcare2, agilcare3, agilcare4],
+    gallery: [agilcare1, agilcare2, agilcare3, agilcare4, agilcare5, agilcare6, agilcare7],
     gallerySubtitle: "Rebranding Materials",
     metrics: [
       { value: "New", label: "Brand Identity" },
