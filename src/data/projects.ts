@@ -7,6 +7,11 @@ import scotturb3 from "@/assets/scotturb-3.jpg";
 import scotturb4 from "@/assets/scotturb-4.jpg";
 import airmetStand from "@/assets/airmet-stand-btl.jpg";
 import heroImage from "@/assets/hero-lightbulb.jpg";
+import shoppingCenter1 from "@/assets/shopping-center-1.jpg";
+import shoppingCenter2 from "@/assets/shopping-center-2.jpg";
+import shoppingCenter3 from "@/assets/shopping-center-3.jpg";
+import shoppingCenter4 from "@/assets/shopping-center-4.png";
+import shoppingCenter5 from "@/assets/shopping-center-5.png";
 
 // Convention assets
 import conventionHero from "@/assets/convention-hero.jpg";
@@ -168,22 +173,22 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "airmet-stand-btl",
-    title: "Stand BTL 2025",
-    subtitle: "EXHIBITION DESIGN",
-    category: "Design",
-    heroImage: airmetStand,
-    client: "Airmet",
-    year: "2025",
-    services: ["Exhibition Design", "Graphic Production", "Brand Application"],
-    challenge: "Airmet, Portugal's fastest-growing travel agency network, needed a standout exhibition presence for BTL 2025 that would reinforce their market leadership position.",
-    solution: "We developed a comprehensive stand design with impactful graphics, branded pillars, and cohesive visual elements that communicate their #CrescemosJuntos message effectively.",
-    gallery: [airmetStand, heroImage, airmetStand],
-    gallerySubtitle: "Stand Design & Production",
+    slug: "shopping-center-social-media",
+    title: "Shopping Center Social Media",
+    subtitle: "SOCIAL MEDIA CAMPAIGNS",
+    category: "Social Media",
+    heroImage: shoppingCenter1,
+    client: "Almada Forum",
+    year: "2022",
+    services: ["Social Media Design", "Content Creation", "Visual Strategy"],
+    challenge: "The shopping center needed vibrant, engaging social media content to connect with their audience and promote diverse offerings from food to entertainment.",
+    solution: "We created a colorful, playful social media visual identity with bold graphics and relatable content that drives engagement and foot traffic to the shopping center.",
+    gallery: [shoppingCenter1, shoppingCenter2, shoppingCenter3, shoppingCenter4, shoppingCenter5],
+    gallerySubtitle: "Social Media Posts",
     metrics: [
-      { value: "190cm", label: "Totem Height" },
-      { value: "4", label: "Branded Pillars" },
-      { value: "#1", label: "Growth Network" },
+      { value: "5+", label: "Campaigns" },
+      { value: "High", label: "Engagement" },
+      { value: "Multi", label: "Formats" },
     ],
   },
 
