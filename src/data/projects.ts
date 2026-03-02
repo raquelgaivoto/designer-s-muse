@@ -18,7 +18,7 @@ import scotturb2 from "@/assets/scotturb-2.jpg";
 import scotturb3 from "@/assets/scotturb-3.jpg";
 import scotturb4 from "@/assets/scotturb-4.jpg";
 import airmetStand from "@/assets/airmet-stand-btl.jpg";
-import heroImage from "@/assets/hero-lightbulb.jpg";
+
 import shoppingCenter1 from "@/assets/shopping-center-1.jpg";
 import shoppingCenter2 from "@/assets/shopping-center-2.jpg";
 import shoppingCenter3 from "@/assets/shopping-center-3.jpg";
@@ -247,47 +247,6 @@ export const projects: Project[] = [
     video: "/videos/agilcare-rebrand.mp4",
   },
 
-  // VIDEO CATEGORY
-  {
-    slug: "titulo-motion",
-    title: "Title Motion Graphics",
-    subtitle: "MOTION DESIGN",
-    category: "Video",
-    heroImage: heroImage,
-    client: "Various Clients",
-    year: "2024",
-    services: ["Motion Design", "Title Animation", "Video Production"],
-    challenge: "Creating dynamic, attention-grabbing title sequences that establish brand identity and set the tone for video content across multiple client projects.",
-    solution: "We developed sleek motion graphics with fluid animations and impactful typography that enhance brand storytelling and create memorable first impressions.",
-    gallery: [heroImage, heroImage, heroImage],
-    gallerySubtitle: "Motion Graphics Frames",
-    metrics: [
-      { value: "60fps", label: "Smooth Animation" },
-      { value: "4K", label: "Resolution" },
-      { value: "100%", label: "Brand Aligned" },
-    ],
-    video: "/videos/titulo-motion.mp4",
-  },
-  {
-    slug: "brevemente-teaser",
-    title: "Coming Soon Teaser",
-    subtitle: "TEASER VIDEO",
-    category: "Video",
-    heroImage: heroImage,
-    client: "Various Clients",
-    year: "2024",
-    services: ["Teaser Video", "Motion Graphics", "Anticipation Marketing"],
-    challenge: "Building anticipation for upcoming product launches or events through captivating teaser videos that generate buzz without revealing too much.",
-    solution: "We crafted mysterious, looping teaser animations with the 'Brevemente' (Coming Soon) message that create intrigue and keep audiences engaged until the full reveal.",
-    gallery: [heroImage, heroImage, heroImage],
-    gallerySubtitle: "Teaser Stills",
-    metrics: [
-      { value: "Loop", label: "Seamless Design" },
-      { value: "High", label: "Anticipation" },
-      { value: "Social", label: "Optimized" },
-    ],
-    video: "/videos/brevemente-motion.mp4",
-  },
 ];
 
 export const getProjectBySlug = (slug: string): Project | undefined => {
