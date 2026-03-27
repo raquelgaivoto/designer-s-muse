@@ -67,7 +67,6 @@ const Contact = () => {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <p>© 2024 Portfolio_RG. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-foreground transition-colors">Behance</a>
             <a href="https://www.linkedin.com/in/raquel-gaivoto-aa69bb17a/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
           </div>
         </div>
