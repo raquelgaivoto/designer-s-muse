@@ -97,8 +97,8 @@ export const projects: Project[] = [
     client: "Airmet",
     year: "2025",
     services: ["Event Image", "Graphic Production", "Brand Application"],
-    challenge: "Airmet needed a comprehensive visual identity for their 21st annual convention in Qatar, encompassing all event materials from stage design to individual delegate badges.",
-    solution: "We created a cohesive futuristic visual system with holographic elements and neon accents that unified all convention touchpoints — banners, name cards, programs, and stage backdrops.",
+    challenge: "Airmet needed a comprehensive visual identity for their annual convention in Spain, encompassing all event materials from stage design to individual delegate badges.",
+    solution: "A visual bridge between structure and innovation. It reflects a journey where tradition meets transformation — delivering more technology, more value, more future.",
     gallery: [conventionG1, conventionG2, conventionG3, conventionG4, conventionG5, conventionG6, conventionG7],
     gallerySubtitle: "21º Airmet Convention",
     metrics: [
