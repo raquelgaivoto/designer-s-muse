@@ -111,7 +111,7 @@ export const projects: Project[] = [
   },
   {
     slug: "porto-santo-campaigns",
-    title: "Brand campaigns in black",
+    title: "Brand campaigns",
     subtitle: "multiple destiny's and seasons",
     category: "Design",
     heroImage: portoSantoHero,
