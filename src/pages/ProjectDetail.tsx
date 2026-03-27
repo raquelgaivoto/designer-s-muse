@@ -42,7 +42,7 @@ const ProjectDetail = () => {
         images={project.gallery} 
         title={project.title}
         subtitle={project.gallerySubtitle}
-        layout={slug === "porto-santo-campaigns" ? "porto-santo" : "default"}
+        layout={slug === "porto-santo-campaigns" ? "porto-santo" : slug === "events" ? "events" : "default"}
       />
       <ProjectNav prevProject={prev} nextProject={next} />
       <Contact />
