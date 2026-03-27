@@ -27,13 +27,13 @@ import shoppingCenter5 from "@/assets/shopping-center-5.png";
 
 // Convention assets
 import conventionHero from "@/assets/convention-hero.jpg";
-import conventionG1 from "@/assets/convention-gallery-1.jpg";
-import conventionG2 from "@/assets/convention-gallery-2.jpg";
-import conventionG3 from "@/assets/convention-gallery-3.jpg";
-import conventionG4 from "@/assets/convention-gallery-4.jpg";
-import conventionG5 from "@/assets/convention-gallery-5.jpg";
-import conventionG6 from "@/assets/convention-gallery-6.jpg";
-import conventionG7 from "@/assets/convention-gallery-7.jpg";
+import conventionG1 from "@/assets/convention-gallery-1.png";
+import conventionG2 from "@/assets/convention-gallery-2.png";
+import conventionG3 from "@/assets/convention-gallery-3.png";
+import conventionG4 from "@/assets/convention-gallery-4.png";
+import conventionG5 from "@/assets/convention-gallery-5.png";
+import conventionG6 from "@/assets/convention-gallery-6.png";
+import conventionG7 from "@/assets/convention-gallery-7.png";
 
 // Porto Santo assets
 import portoSantoHero from "@/assets/portosanto-hero.jpg";
