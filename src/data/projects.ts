@@ -40,6 +40,9 @@ import portoSantoHero from "@/assets/portosanto-hero.jpg";
 import portoSantoG1 from "@/assets/portosanto-gallery-1.png";
 import portoSantoG2 from "@/assets/portosanto-gallery-2.png";
 import portoSantoG3 from "@/assets/portosanto-gallery-3.png";
+import portoSantoG4 from "@/assets/portosanto-gallery-4.png";
+import portoSantoG5 from "@/assets/portosanto-gallery-5.png";
+import portoSantoG6 from "@/assets/portosanto-gallery-6.png";
 
 // Stands assets
 import standsHero from "@/assets/stands-hero.jpg";
