@@ -5,7 +5,6 @@ import ProjectHero from "@/components/ProjectHero";
 import ProjectInfo from "@/components/ProjectInfo";
 import ProjectContent from "@/components/ProjectContent";
 import ProjectGallery from "@/components/ProjectGallery";
-import ProjectVideo from "@/components/ProjectVideo";
 import ProjectNav from "@/components/ProjectNav";
 import Contact from "@/components/Contact";
 
@@ -44,10 +43,6 @@ const ProjectDetail = () => {
         title={project.title}
         subtitle={project.gallerySubtitle}
         layout={slug === "porto-santo-campaigns" ? "porto-santo" : "default"}
-      />
-      <ProjectVideo 
-        video={project.video} 
-        title={project.title} 
       />
       <ProjectNav prevProject={prev} nextProject={next} />
       <Contact />
