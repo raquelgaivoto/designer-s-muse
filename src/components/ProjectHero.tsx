@@ -21,7 +21,7 @@ const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps)
           BACK TO PORTFOLIO RG
         </Link>
         <Link to="/" className="font-display text-2xl md:text-3xl tracking-tight">
-          PORTFOLIO<span className="opacity-50">_</span>RG
+          <span className="text-sm font-medium tracking-wide opacity-70">BACK TO </span>PORTFOLIO<span className="opacity-50">_</span>RG
         </Link>
       </header>
 
