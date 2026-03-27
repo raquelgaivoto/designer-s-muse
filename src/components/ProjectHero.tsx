@@ -12,16 +12,16 @@ const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps)
   return (
     <section className="relative min-h-screen">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4">
+      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4 text-white">
         <Link 
           to="/" 
-          className="flex items-center gap-2 text-sm font-medium tracking-wide hover:text-primary transition-colors"
+          className="flex items-center gap-2 text-sm font-medium tracking-wide hover:opacity-80 transition-opacity"
         >
           <ArrowLeft className="w-4 h-4" />
           BACK TO PORTFOLIO RG
         </Link>
         <Link to="/" className="font-display text-2xl md:text-3xl tracking-tight">
-          PORTFOLIO<span className="text-muted-foreground">_</span>RG
+          PORTFOLIO<span className="opacity-50">_</span>RG
         </Link>
       </header>
 
