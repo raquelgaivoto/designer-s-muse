@@ -59,12 +59,12 @@ import standsG7 from "@/assets/stands-gallery-7.jpg";
 
 // Events assets
 import eventsHero from "@/assets/events-hero.jpg";
-import eventsG1 from "@/assets/events-gallery-1.jpg";
-import eventsG2 from "@/assets/events-gallery-2.jpg";
-import eventsG3 from "@/assets/events-gallery-3.jpg";
+import eventsG1 from "@/assets/events-gallery-1.png";
+import eventsG2 from "@/assets/events-gallery-2.png";
+import eventsG3 from "@/assets/events-gallery-3.png";
 import eventsG4 from "@/assets/events-gallery-4.png";
 import eventsG5 from "@/assets/events-gallery-5.png";
-import eventsG6 from "@/assets/events-gallery-6.jpg";
+import eventsG6 from "@/assets/events-gallery-6.png";
 
 export interface ProjectMetric {
   value: string;
