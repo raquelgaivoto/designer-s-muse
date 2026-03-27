@@ -26,7 +26,7 @@ import shoppingCenter4 from "@/assets/shopping-center-4.png";
 import shoppingCenter5 from "@/assets/shopping-center-5.png";
 
 // Convention assets
-import conventionHero from "@/assets/convention-hero.jpg";
+import conventionHero from "@/assets/convention-hero.png";
 import conventionG1 from "@/assets/convention-gallery-1.png";
 import conventionG2 from "@/assets/convention-gallery-2.png";
 import conventionG3 from "@/assets/convention-gallery-3.png";
