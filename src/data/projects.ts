@@ -37,13 +37,9 @@ import conventionG7 from "@/assets/convention-gallery-7.png";
 
 // Porto Santo assets
 import portoSantoHero from "@/assets/portosanto-hero.jpg";
-import portoSantoG1 from "@/assets/portosanto-gallery-1.jpg";
-import portoSantoG2 from "@/assets/portosanto-gallery-2.jpg";
-import portoSantoG3 from "@/assets/portosanto-gallery-3.jpg";
-import portoSantoG4 from "@/assets/portosanto-gallery-4.jpg";
-import portoSantoG5 from "@/assets/portosanto-gallery-5.jpg";
-import portoSantoG6 from "@/assets/portosanto-gallery-6.jpg";
-import portoSantoG7 from "@/assets/portosanto-gallery-7.jpg";
+import portoSantoG1 from "@/assets/portosanto-gallery-1.png";
+import portoSantoG2 from "@/assets/portosanto-gallery-2.png";
+import portoSantoG3 from "@/assets/portosanto-gallery-3.png";
 
 // Stands assets
 import standsHero from "@/assets/stands-hero.jpg";
