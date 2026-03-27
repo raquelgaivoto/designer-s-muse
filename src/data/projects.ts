@@ -36,7 +36,7 @@ import conventionG6 from "@/assets/convention-gallery-6.png";
 import conventionG7 from "@/assets/convention-gallery-7.png";
 
 // Porto Santo assets
-import portoSantoHero from "@/assets/portosanto-hero.jpg";
+import portoSantoHero from "@/assets/portosanto-hero.png";
 import portoSantoG1 from "@/assets/portosanto-gallery-1.png";
 import portoSantoG2 from "@/assets/portosanto-gallery-2.png";
 import portoSantoG3 from "@/assets/portosanto-gallery-3.png";
