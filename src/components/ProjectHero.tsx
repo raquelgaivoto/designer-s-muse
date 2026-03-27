@@ -10,7 +10,7 @@ interface ProjectHeroProps {
 
 const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps) => {
   return (
-    <section className="relative min-h-screen">
+    <section className="relative min-h-[70vh]">
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4 text-white">
         <Link 
