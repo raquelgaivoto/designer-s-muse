@@ -17,11 +17,11 @@ const ProjectHero = ({ title, subtitle, category, heroImage }: ProjectHeroProps)
           PORTFOLIO<span className="text-muted-foreground">_</span>RG
         </Link>
         <Link 
-          to="/#projects" 
+          to="/" 
           className="flex items-center gap-2 text-sm font-medium tracking-wide hover:text-primary transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          BACK TO PROJECTS
+          BACK TO HOME
         </Link>
       </header>
 
