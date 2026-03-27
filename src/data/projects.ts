@@ -40,6 +40,9 @@ import portoSantoHero from "@/assets/portosanto-hero.jpg";
 import portoSantoG1 from "@/assets/portosanto-gallery-1.png";
 import portoSantoG2 from "@/assets/portosanto-gallery-2.png";
 import portoSantoG3 from "@/assets/portosanto-gallery-3.png";
+import portoSantoG4 from "@/assets/portosanto-gallery-4.png";
+import portoSantoG5 from "@/assets/portosanto-gallery-5.png";
+import portoSantoG6 from "@/assets/portosanto-gallery-6.png";
 
 // Stands assets
 import standsHero from "@/assets/stands-hero.jpg";
@@ -114,7 +117,7 @@ export const projects: Project[] = [
     services: ["Event Image", "Brand Application", "Campaign Design"],
     challenge: "Creating a series of visually distinct yet brand-consistent campaigns for Porto Santo destinations across multiple seasons and promotional events.",
     solution: "We designed a flexible campaign system with tropical aesthetics, adapting the visual language for honeymoon packages, summer promotions, Black Days deals, and seasonal offers.",
-    gallery: [portoSantoG1, portoSantoG2, portoSantoG3],
+    gallery: [portoSantoG1, portoSantoG2, portoSantoG3, portoSantoG4, portoSantoG5, portoSantoG6],
     gallerySubtitle: "Multiple Campaigns",
     metrics: [
       { value: "6+", label: "Campaigns" },
