@@ -42,7 +42,8 @@ const ProjectDetail = () => {
       <ProjectGallery 
         images={project.gallery} 
         title={project.title}
-        subtitle={project.gallerySubtitle} 
+        subtitle={project.gallerySubtitle}
+        layout={slug === "porto-santo-campaigns" ? "porto-santo" : "default"}
       />
       <ProjectVideo 
         video={project.video} 
