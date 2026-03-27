@@ -26,9 +26,18 @@ const ProjectNav = ({ prevProject, nextProject }: ProjectNavProps) => {
             </div>
           </Link>
         ) : (
-          <div className="p-8 md:p-12 lg:p-16 bg-primary/30 border-b md:border-b-0 md:border-r border-foreground/20">
-            <p className="text-xs text-muted-foreground tracking-wider">NO PREVIOUS PROJECT</p>
-          </div>
+          <Link 
+            to="/"
+            className="group bg-primary/30 border-b md:border-b-0 md:border-r border-foreground/20 hover:opacity-90 transition-opacity"
+          >
+            <div className="p-8 md:p-12 lg:p-16 flex items-center gap-4">
+              <ArrowLeft className="w-6 h-6 group-hover:-translate-x-2 transition-transform" />
+              <div>
+                <p className="text-xs tracking-wider mb-1 text-muted-foreground">BACK</p>
+                <p className="font-display text-2xl md:text-3xl">HOME</p>
+              </div>
+            </div>
+          </Link>
         )}
 
         {/* Next Project */}
