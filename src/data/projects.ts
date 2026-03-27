@@ -118,7 +118,7 @@ export const projects: Project[] = [
     client: "Airmet",
     year: "2024 / 2025",
     services: ["Event Image", "Brand Application", "Campaign Design"],
-    challenge: "Creating a series of visually distinct yet brand-consistent campaigns for Porto Santo destinations across multiple seasons and promotional events.",
+    challenge: "Creating a series of visually distinct yet brand-consistent campaigns across multiple destinations, seasons, and promotional events.",
     solution: "We designed a flexible campaign system with tropical aesthetics, adapting the visual language for honeymoon packages, summer promotions, Black Days deals, and seasonal offers.",
     gallery: [portoSantoG1, portoSantoG2, portoSantoG3, portoSantoG4, portoSantoG5, portoSantoG6, portoSantoG7, portoSantoG8, portoSantoG9],
     gallerySubtitle: "Multiple Campaigns",
