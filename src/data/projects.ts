@@ -99,7 +99,7 @@ export const projects: Project[] = [
     services: ["Event Image", "Graphic Production", "Brand Application"],
     challenge: "Airmet needed a comprehensive visual identity for their annual convention in Spain, encompassing all event materials from stage design to individual delegate badges.",
     solution: "A visual bridge between structure and innovation. It reflects a journey where tradition meets transformation — delivering more technology, more value, more future.",
-    gallery: [conventionG1, conventionG2, conventionG3, conventionG4, conventionG5, conventionG6, conventionG7],
+    gallery: [conventionG1, conventionG2, conventionG3, conventionG4, conventionG5, conventionG7],
     gallerySubtitle: "21º Airmet Convention",
     metrics: [
       { value: "200+", label: "Attendees" },
