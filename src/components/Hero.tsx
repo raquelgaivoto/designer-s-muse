@@ -7,32 +7,6 @@ const Hero = () => {
 
   return (
     <section>
-      {/* Large Title */}
-      <header className="border-b border-foreground">
-        <h1 className="font-display text-[12vw] md:text-[10vw] lg:text-[8vw] leading-none tracking-tight px-6 py-4">
-          PORTFOLIO<span className="text-muted-foreground">_</span>RG
-        </h1>
-      </header>
-
-      {/* Navigation */}
-      <nav className="flex items-center justify-between border-b border-foreground px-6 py-4">
-        <ul className="hidden md:flex items-center gap-8">
-          {navItems.map((item, index) => (
-            <li key={item} className="flex items-center gap-4">
-              <a 
-                href="#projects" 
-                className="link-underline text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {item}
-              </a>
-              {index < navItems.length - 1 && (
-                <span className="text-muted-foreground">/</span>
-              )}
-            </li>
-          ))}
-        </ul>
-        <button className="md:hidden text-sm font-medium">Menu</button>
-      </nav>
 
       {/* Hero Content */}
       <div className="relative border-b border-foreground overflow-hidden">
