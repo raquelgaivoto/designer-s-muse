@@ -151,7 +151,7 @@ export const projects: Project[] = [
   {
     slug: "events",
     title: "Events",
-    subtitle: "REVENGE OF AIRMET",
+    subtitle: "MULTIPLE EVENTS GRAPHICS",
     category: "Design",
     heroImage: eventsHero,
     client: "Airmet & Consolidador",
