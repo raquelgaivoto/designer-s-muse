@@ -97,8 +97,8 @@ const ProjectGallery = ({ images, title, subtitle, layout = "default" }: Project
             </div>
 
             {images[3] && (
-              <div className="overflow-hidden aspect-square">
-                <img src={images[3]} alt={`${title} gallery image 4`} className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              <div className="overflow-hidden aspect-square bg-muted/20">
+                <img src={images[3]} alt={`${title} gallery image 4`} className="w-full h-full object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
               </div>
             )}
 
