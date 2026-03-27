@@ -7,7 +7,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const services = [
   { id: "01", title: "Design", description: "Brand identity, UI/UX, and visual design solutions.", image: projectDesign },
   { id: "02", title: "Social Media", description: "Strategic content creation and community management.", image: projectSocial },
-  { id: "03", title: "Email", description: "Newsletter design and email marketing campaigns.", image: projectEmail },
 ];
 
 const Services = () => {
