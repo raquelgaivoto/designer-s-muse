@@ -58,6 +58,8 @@ import standsG6 from "@/assets/stands-gallery-6.png";
 import standsG7 from "@/assets/stands-gallery-7.png";
 import standsG8 from "@/assets/stands-gallery-8.png";
 import standsG9 from "@/assets/stands-gallery-9.png";
+import standsG10 from "@/assets/stands-gallery-10.png";
+import standsG11 from "@/assets/stands-gallery-11.png";
 
 // Events assets
 import eventsHero from "@/assets/events-hero.jpg";
