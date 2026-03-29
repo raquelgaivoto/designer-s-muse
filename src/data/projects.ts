@@ -144,7 +144,7 @@ export const projects: Project[] = [
     services: ["Exhibition Design", "Graphic Production", "Brand Application"],
     challenge: "Designing standout exhibition presences for both Airmet and Consolidador.com at BTL and Travel Technology fairs, reinforcing their market leadership.",
     solution: "We developed comprehensive stand designs with impactful graphics, branded structures, and immersive visual elements that communicate each brand's identity and attract visitors.",
-    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7, standsG8, standsG9],
+    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7, standsG8, standsG9, standsG10, standsG11],
     gallerySubtitle: "Exhibition Stands",
     metrics: [
       { value: "2", label: "Brands" },
