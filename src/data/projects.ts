@@ -58,6 +58,8 @@ import standsG6 from "@/assets/stands-gallery-6.png";
 import standsG7 from "@/assets/stands-gallery-7.png";
 import standsG8 from "@/assets/stands-gallery-8.png";
 import standsG9 from "@/assets/stands-gallery-9.png";
+import standsG10 from "@/assets/stands-gallery-10.png";
+import standsG11 from "@/assets/stands-gallery-11.png";
 
 // Events assets
 import eventsHero from "@/assets/events-hero.jpg";
@@ -142,7 +144,7 @@ export const projects: Project[] = [
     services: ["Exhibition Design", "Graphic Production", "Brand Application"],
     challenge: "Designing standout exhibition presences for both Airmet and Consolidador.com at BTL and Travel Technology fairs, reinforcing their market leadership.",
     solution: "We developed comprehensive stand designs with impactful graphics, branded structures, and immersive visual elements that communicate each brand's identity and attract visitors.",
-    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7, standsG8, standsG9],
+    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7, standsG8, standsG9, standsG10, standsG11],
     gallerySubtitle: "Exhibition Stands",
     metrics: [
       { value: "2", label: "Brands" },
