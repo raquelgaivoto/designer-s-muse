@@ -121,6 +121,23 @@ const ProjectGallery = ({ images, title, subtitle, layout = "default" }: Project
             </div>
           )}
         </div>
+      ) : layout === "events" ? (
+        <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-4 md:space-y-6">
+          {/* Row 1: two wide banners */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {images.slice(0, 2).map((img, idx) => (
+              <div key={idx} className="overflow-hidden bg-muted/20 rounded-sm">
+                <img src={img} alt={`${title} gallery image ${idx + 1}`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            ))}
+          </div>
+          {/* Remaining images: full width to preserve aspect ratio */}
+          {images.slice(2).map((img, idx) => (
+            <div key={idx + 2} className="overflow-hidden bg-muted/20 rounded-sm">
+              <img src={img} alt={`${title} gallery image ${idx + 3}`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+          ))}
+        </div>
       ) : (
         /* Default gallery rows */
         <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-4 md:space-y-6">
