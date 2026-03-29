@@ -49,13 +49,15 @@ import portoSantoG9 from "@/assets/portosanto-gallery-9.png";
 
 // Stands assets
 import standsHero from "@/assets/stands-hero.jpg";
-import standsG1 from "@/assets/stands-gallery-1.jpg";
-import standsG2 from "@/assets/stands-gallery-2.jpg";
-import standsG3 from "@/assets/stands-gallery-3.jpg";
-import standsG4 from "@/assets/stands-gallery-4.jpg";
-import standsG5 from "@/assets/stands-gallery-5.jpg";
-import standsG6 from "@/assets/stands-gallery-6.jpg";
-import standsG7 from "@/assets/stands-gallery-7.jpg";
+import standsG1 from "@/assets/stands-gallery-1.png";
+import standsG2 from "@/assets/stands-gallery-2.png";
+import standsG3 from "@/assets/stands-gallery-3.png";
+import standsG4 from "@/assets/stands-gallery-4.png";
+import standsG5 from "@/assets/stands-gallery-5.png";
+import standsG6 from "@/assets/stands-gallery-6.png";
+import standsG7 from "@/assets/stands-gallery-7.png";
+import standsG8 from "@/assets/stands-gallery-8.png";
+import standsG9 from "@/assets/stands-gallery-9.png";
 
 // Events assets
 import eventsHero from "@/assets/events-hero.jpg";
@@ -140,7 +142,7 @@ export const projects: Project[] = [
     services: ["Exhibition Design", "Graphic Production", "Brand Application"],
     challenge: "Designing standout exhibition presences for both Airmet and Consolidador.com at BTL and Travel Technology fairs, reinforcing their market leadership.",
     solution: "We developed comprehensive stand designs with impactful graphics, branded structures, and immersive visual elements that communicate each brand's identity and attract visitors.",
-    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7],
+    gallery: [standsG1, standsG2, standsG3, standsG4, standsG5, standsG6, standsG7, standsG8, standsG9],
     gallerySubtitle: "Exhibition Stands",
     metrics: [
       { value: "2", label: "Brands" },

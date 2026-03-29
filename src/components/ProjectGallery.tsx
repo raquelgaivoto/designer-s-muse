@@ -4,7 +4,7 @@ interface ProjectGalleryProps {
   images: string[];
   title: string;
   subtitle?: string;
-  layout?: "default" | "porto-santo" | "events";
+  layout?: "default" | "porto-santo" | "events" | "stands";
 }
 
 interface GalleryRow {
@@ -118,6 +118,67 @@ const ProjectGallery = ({ images, title, subtitle, layout = "default" }: Project
           {images[8] && (
             <div className="overflow-hidden aspect-[21/8]">
               <img src={images[8]} alt={`${title} gallery image 9`} className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+          )}
+        </div>
+      ) : layout === "stands" ? (
+        <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-4 md:space-y-6">
+          {/* Row 1: large left + two small right */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {images[0] && (
+              <div className="md:col-span-2 overflow-hidden bg-muted/10 rounded-sm">
+                <img src={images[0]} alt={`${title} gallery 1`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+            <div className="md:col-span-1 space-y-4 md:space-y-6">
+              {images[7] && (
+                <div className="overflow-hidden bg-muted/10 rounded-sm">
+                  <img src={images[7]} alt={`${title} gallery 8`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+                </div>
+              )}
+              {images[8] && (
+                <div className="overflow-hidden bg-muted/10 rounded-sm">
+                  <img src={images[8]} alt={`${title} gallery 9`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+                </div>
+              )}
+            </div>
+          </div>
+          {/* Row 2: two items */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {images[1] && (
+              <div className="overflow-hidden bg-muted/10 rounded-sm">
+                <img src={images[1]} alt={`${title} gallery 2`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+            {images[6] && (
+              <div className="overflow-hidden bg-muted/10 rounded-sm">
+                <img src={images[6]} alt={`${title} gallery 7`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+          </div>
+          {/* Row 3: stand 3D render full width */}
+          {images[2] && (
+            <div className="overflow-hidden bg-muted/10 rounded-sm">
+              <img src={images[2]} alt={`${title} gallery 3`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+          )}
+          {/* Row 4: magazines + bag + calendar */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {images[3] && (
+              <div className="overflow-hidden bg-muted/10 rounded-sm">
+                <img src={images[3]} alt={`${title} gallery 4`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+            {images[5] && (
+              <div className="overflow-hidden bg-muted/10 rounded-sm">
+                <img src={images[5]} alt={`${title} gallery 6`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+          </div>
+          {/* Row 5: remaining */}
+          {images[4] && (
+            <div className="overflow-hidden bg-muted/10 rounded-sm">
+              <img src={images[4]} alt={`${title} gallery 5`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
             </div>
           )}
         </div>
