@@ -4,6 +4,7 @@ interface ProjectGalleryProps {
   images: string[];
   title: string;
   subtitle?: string;
+  sections?: { title: string; images: string[] }[];
   layout?: "default" | "porto-santo" | "events" | "stands" | "email-web";
 }
 
