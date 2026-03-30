@@ -76,6 +76,7 @@ import emailWeb7 from "@/assets/email-web-7.png";
 import emailWeb8 from "@/assets/email-web-8.png";
 import emailWeb9 from "@/assets/email-web-9.png";
 import emailWeb10 from "@/assets/email-web-10.png";
+import emailWeb11 from "@/assets/email-web-11.png";
 import eventsG1 from "@/assets/events-gallery-1.png";
 import eventsG2 from "@/assets/events-gallery-2.png";
 import eventsG3 from "@/assets/events-gallery-3.png";
