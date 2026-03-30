@@ -63,6 +63,18 @@ import standsG11 from "@/assets/stands-gallery-11.png";
 
 // Events assets
 import eventsHero from "@/assets/events-hero.jpg";
+
+// Email & Web assets
+import emailWeb1 from "@/assets/email-web-1.png";
+import emailWeb2 from "@/assets/email-web-2.png";
+import emailWeb3 from "@/assets/email-web-3.png";
+import emailWeb4 from "@/assets/email-web-4.png";
+import emailWeb5 from "@/assets/email-web-5.png";
+import emailWeb6 from "@/assets/email-web-6.png";
+import emailWeb7 from "@/assets/email-web-7.png";
+import emailWeb8 from "@/assets/email-web-8.png";
+import emailWeb9 from "@/assets/email-web-9.png";
+import emailWeb10 from "@/assets/email-web-10.png";
 import eventsG1 from "@/assets/events-gallery-1.png";
 import eventsG2 from "@/assets/events-gallery-2.png";
 import eventsG3 from "@/assets/events-gallery-3.png";
