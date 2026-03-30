@@ -13,7 +13,7 @@ interface GalleryRow {
   images: string[];
 }
 
-const ProjectGallery = ({ images, title, subtitle, layout = "default" }: ProjectGalleryProps) => {
+const ProjectGallery = ({ images, title, subtitle, sections, layout = "default" }: ProjectGalleryProps) => {
   // Distribute images into rows with varied layouts matching the PDF editorial style
   const rows = useMemo(() => {
     const result: GalleryRow[] = [];
