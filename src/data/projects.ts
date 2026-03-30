@@ -65,6 +65,7 @@ import standsG11 from "@/assets/stands-gallery-11.png";
 import eventsHero from "@/assets/events-hero.jpg";
 
 // Email & Web assets
+import emailWebHero from "@/assets/email-web-hero.png";
 import emailWeb1 from "@/assets/email-web-1.png";
 import emailWeb2 from "@/assets/email-web-2.png";
 import emailWeb3 from "@/assets/email-web-3.png";
