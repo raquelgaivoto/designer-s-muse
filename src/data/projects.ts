@@ -101,6 +101,7 @@ export interface Project {
   challenge: string;
   solution: string;
   gallery: string[];
+  gallerySections?: { title: string; images: string[] }[];
   gallerySubtitle?: string;
   metrics: ProjectMetric[];
   video?: string;
