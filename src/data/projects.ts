@@ -265,6 +265,27 @@ export const projects: Project[] = [
     video: "/videos/agilcare-rebrand.mp4",
   },
 
+  // EMAIL MARKETING & WEB DESIGN
+  {
+    slug: "email-marketing-web-design",
+    title: "Email Marketing & Web Design",
+    subtitle: "NEWSLETTERS, EMAIL CAMPAIGNS & WEB PAGES",
+    category: "Design",
+    heroImage: emailWeb5,
+    client: "Airmet & Consolidador",
+    year: "2024 / 2025",
+    services: ["Email Marketing", "Web Design", "Newsletter Design", "UI/UX"],
+    challenge: "Airmet and Consolidador needed a consistent, engaging digital communication strategy — from monthly newsletters and email campaigns to web page design — that keeps travel agencies informed and connected.",
+    solution: "We designed and developed a full suite of email templates, newsletters, and web pages with clean layouts, strong brand identity, and clear calls-to-action, ensuring every digital touchpoint reinforces trust and drives engagement.",
+    gallery: [emailWeb1, emailWeb2, emailWeb3, emailWeb4, emailWeb5, emailWeb6, emailWeb7, emailWeb8, emailWeb9, emailWeb10],
+    gallerySubtitle: "Email & Web Design Work",
+    metrics: [
+      { value: "50+", label: "Newsletters" },
+      { value: "2", label: "Brands" },
+      { value: "Multi", label: "Platforms" },
+    ],
+  },
+
 ];
 
 export const getProjectBySlug = (slug: string): Project | undefined => {
