@@ -4,6 +4,7 @@ interface ProjectGalleryProps {
   images: string[];
   title: string;
   subtitle?: string;
+  sections?: { title: string; images: string[] }[];
   layout?: "default" | "porto-santo" | "events" | "stands" | "email-web";
 }
 
@@ -12,7 +13,7 @@ interface GalleryRow {
   images: string[];
 }
 
-const ProjectGallery = ({ images, title, subtitle, layout = "default" }: ProjectGalleryProps) => {
+const ProjectGallery = ({ images, title, subtitle, sections, layout = "default" }: ProjectGalleryProps) => {
   // Distribute images into rows with varied layouts matching the PDF editorial style
   const rows = useMemo(() => {
     const result: GalleryRow[] = [];
@@ -195,24 +196,22 @@ const ProjectGallery = ({ images, title, subtitle, layout = "default" }: Project
             )}
           </div>
         </div>
-      ) : layout === "email-web" ? (
-        <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-4 md:space-y-6">
-          {/* Web pages row: full width */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            {images.slice(0, 2).map((img, idx) => (
-              <div key={idx} className="overflow-hidden bg-muted/10 rounded-sm">
-                <img src={img} alt={`${title} gallery ${idx + 1}`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+      ) : layout === "email-web" && sections ? (
+        <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-12 md:space-y-16">
+          {sections.map((section, sIdx) => (
+            <div key={sIdx}>
+              <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-center mb-8 md:mb-12 text-primary italic underline underline-offset-4 decoration-2">
+                {section.title.toUpperCase()}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                {section.images.map((img, idx) => (
+                  <div key={idx} className="overflow-hidden bg-muted/10 rounded-sm">
+                    <img src={img} alt={`${section.title} ${idx + 1}`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          {/* Email screenshots: 3 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {images.slice(2).map((img, idx) => (
-              <div key={idx + 2} className="overflow-hidden bg-muted/10 rounded-sm">
-                <img src={img} alt={`${title} gallery ${idx + 3}`} className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       ) : layout === "events" ? (
         <div className="px-6 md:px-10 lg:px-16 pb-16 md:pb-20 lg:pb-24 space-y-4 md:space-y-6">

@@ -76,6 +76,7 @@ import emailWeb7 from "@/assets/email-web-7.png";
 import emailWeb8 from "@/assets/email-web-8.png";
 import emailWeb9 from "@/assets/email-web-9.png";
 import emailWeb10 from "@/assets/email-web-10.png";
+import emailWeb11 from "@/assets/email-web-11.png";
 import eventsG1 from "@/assets/events-gallery-1.png";
 import eventsG2 from "@/assets/events-gallery-2.png";
 import eventsG3 from "@/assets/events-gallery-3.png";
@@ -100,6 +101,7 @@ export interface Project {
   challenge: string;
   solution: string;
   gallery: string[];
+  gallerySections?: { title: string; images: string[] }[];
   gallerySubtitle?: string;
   metrics: ProjectMetric[];
   video?: string;
@@ -278,7 +280,11 @@ export const projects: Project[] = [
     services: ["Email Marketing", "Web Design", "Newsletter Design", "UI/UX"],
     challenge: "Airmet and Consolidador needed a consistent, engaging digital communication strategy — from monthly newsletters and email campaigns to web page design — that keeps travel agencies informed and connected.",
     solution: "We designed and developed a full suite of email templates, newsletters, and web pages with clean layouts, strong brand identity, and clear calls-to-action, ensuring every digital touchpoint reinforces trust and drives engagement.",
-    gallery: [emailWeb1, emailWeb2, emailWeb3, emailWeb4, emailWeb5, emailWeb6, emailWeb7, emailWeb8, emailWeb9, emailWeb10],
+    gallery: [],
+    gallerySections: [
+      { title: "Email Marketing", images: [emailWeb5, emailWeb6, emailWeb3, emailWeb4, emailWeb7, emailWeb8, emailWeb9] },
+      { title: "Web Design", images: [emailWeb1, emailWeb11, emailWeb2, emailWeb10] },
+    ],
     gallerySubtitle: "Email & Web Design Work",
     metrics: [
       { value: "50+", label: "Newsletters" },
