@@ -4,7 +4,7 @@ interface ProjectGalleryProps {
   images: string[];
   title: string;
   subtitle?: string;
-  layout?: "default" | "porto-santo" | "events" | "stands";
+  layout?: "default" | "porto-santo" | "events" | "stands" | "email-web";
 }
 
 interface GalleryRow {
