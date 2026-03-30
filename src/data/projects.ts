@@ -272,7 +272,7 @@ export const projects: Project[] = [
     title: "Email Marketing & Web Design",
     subtitle: "NEWSLETTERS, EMAIL CAMPAIGNS & WEB PAGES",
     category: "Design",
-    heroImage: emailWeb5,
+    heroImage: emailWebHero,
     client: "Airmet & Consolidador",
     year: "2024 / 2025",
     services: ["Email Marketing", "Web Design", "Newsletter Design", "UI/UX"],
